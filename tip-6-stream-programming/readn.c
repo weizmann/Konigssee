@@ -1,3 +1,8 @@
+/*
+ *	readn: read len byte from fd to buffer;
+ *	return read size or -1;
+ *
+ */
 int readn(int fd, char* buffer, size_t len)
 {
 	int unread_count, read_count;
@@ -17,4 +22,9 @@ int readn(int fd, char* buffer, size_t len)
 		}
 	}
 	return len;
+}
+
+int readvrec(int fd, char* buffer, size_t len)
+{
+		
 }
